@@ -1,0 +1,236 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Logo / Title */
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero / Welcome Section */
+.welcome {
+    height: 60vh;
+    background: url("images/restaurant.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.welcome h2 {
+    font-size: 42px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 80px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Food Gallery */
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.food {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.food:hover {
+    transform: translateY(-5px);
+}
+
+.food img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food p {
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Menu Page */
+ul {
+    list-style: none;
+    text-align: center;
+
+}
+.menu-section { 
+  background-image: url('images/restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  color: aquamarine;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 8px 0;
+
+}
+
+/* Forms (Order + Contact) */
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(248, 248, 248, 0.08);
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* About Section */
+.about {
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.hero {
+    height: 80vh;
+    background: url('images/restaurant.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    background-color: rgba(0,0,0,0.5); /* dark overlay for text visibility */
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e60000;
+}

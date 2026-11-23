@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - Smart Bite Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Bite Restaurant</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Place Your Order</h2>
+
+<form onsubmit="return submitOrder()">
+
+    <label>Customer Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+    <label>Select Food:</label><br>
+    <select id="food" onchange="calculateTotal()">
+        <option>Jollof Rice</option>
+        <option>Fried Rice</option>
+        <option>Pizza</option>
+        <option>Burger</option>
+        <option>French Fries</option>
+        <option>Coke</option>
+        <option>Fanta</option>
+        <option>Water</option>
+        <option>Rice and Chicken</option>
+        <option>Chicken Wings</option>
+        <option>Fruit Juice</option>
+        <option>Milkshake</option>
+        <option>Tea</option>
+        <option>Coffee</option>
+        <option>English Breakfast</option>
+        <option>Green Tea</option>
+    </select><br><br>
+
+    <label>Quantity:</label><br>
+    <input type="number" id="quantity" min="1" max="10" onchange="calculateTotal()"><br><br>
+
+    <h3 id="total">Total Price: GHS 0</h3>
+
+    <button type="submit">Submit Order</button>
+
+</form>
+</section>
+
+
+<script src="script.js"></script>
+<footer>
+    <p>© 2026 Smart Bite Restaurant</p>
+</footer>
+
+</body>
+</html>
